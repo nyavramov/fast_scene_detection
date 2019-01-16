@@ -33,10 +33,6 @@ Then use with:
 
 `python3 segment_scene.py "path/to/video.mp4"`
 
-or
-
-`python3 segment_scene.py "path/to/folder/containing/videos"`
-
 ### How do I turn off the visualization?
 Just make sure the `visualize_scenes` variable is set to False in `__main__`. 
 
