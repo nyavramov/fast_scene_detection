@@ -17,7 +17,12 @@ Truthfully, I can't give you an objective answer, but I think it's okay based on
 
 ### How do I use it?
 First, make a virtualenv and install the dependencies by running the following 3 commands:
-`virtualenv venv`, `source venv/bin/activate`, `python3 -m pip install -r requirements.txt`
+
+`virtualenv venv`
+
+`source venv/bin/activate`
+
+`python3 -m pip install -r requirements.txt`
 
 Then use with:
 
