@@ -13,7 +13,7 @@ However, not all frames are hashed. In fact, for a video with 100,000 frames, th
 There is a great library called PySceneDetect that is commonly used for scene detection. It works great but it was too slow for my purposes so I threw this script together quickly. 
 
 ### Is this method even a good way to extract scenes from a video?
-Truthfully, I can't give you an objective answer, but I think it's okay based on my subjective experience. If someone runs the results through an objective metric of scene detection, tell me how this script does compared to other things. For all I know, it could be awful compared to other methods! This is purely experimental.
+Truthfully, I can't give you an objective answer, but I think it's okay based on my subjective experience. However, for all I know, it could be horrible compared to other methods! If someone runs the results through an objective metric of scene detection, tell me how this script does compared to other things. This is purely experimental, so use at your own discretion.
 
 ### How do I use it?
 `python3 segment_scene.py "path/to/video.mp4"`
