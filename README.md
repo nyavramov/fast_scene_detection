@@ -1,5 +1,5 @@
 ### Motivation
-HD Video files are generally large files containing a huge amount of information. It would be nice if there was a way to summarize all this information by extracting scenes that occur throughout the video.
+HD Video files are generally large files containing a huge amount of information. It would be nice if there was a way to summarize all this information by extracting scenes that occur throughout the video. This way, we could view all of the scenes in the video at a glance.
 
 ### What is this?
 It's a small script that attempts to divide a video into scenes based on its content. When run, this script provides a list of timestamps and frame numbers where each scene occurs. It also has an additional option to visualize the frame where each scene starts. 
