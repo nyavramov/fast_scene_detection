@@ -1,5 +1,3 @@
-![](https://i.imgur.com/JCRgA0k.jpg)
-
 ### Motivation
 HD Video files are generally large files containing a huge amount of information. It would be nice if there was a way to summarize all this information by extracting scenes that occur throughout the video.
 
@@ -26,4 +24,7 @@ or
 
 ### How do I turn off the visualization?
 Just make sure the `visualize_scenes` variable is set to False in `__main__`. 
+
+### Sample Visualization 
+![](https://i.imgur.com/JCRgA0k.jpg)
 
