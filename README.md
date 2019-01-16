@@ -10,7 +10,7 @@ It works by using perceptual hashes (pHash) and iterating through frames of an i
 However, not all frames are hashed. In fact, for a video with 100,000 frames, this script would hash 1 out of every ~430 frames. If the video is 60 FPS, then that means the script "checks" for a scene change roughly every ~7 seconds. This decision to skip frames is intentional because my usage prioritizes speed over quality. Furthermore, I assumed that scenes don't change very quickly. However, this behavior is adjustable by changing the `STEPSIZE_CONSTANT`.
 
 ### Aren't there tools that already do this kind of thing?
-There is a great library called PySceneDetect that is commonly used for scene detection. It works great but it was too slow for my purposes so I threw this script together quickly. 
+There is a great library called PySceneDetect that is commonly used for scene detection. It works great but it seemed a little slow for longer videos so I threw this script together quickly. I highly recommend PySceneDetect, though! 
 
 ### Is this method even a good way to extract scenes from a video?
 Truthfully, I can't give you an objective answer, but I think it's okay based on my subjective experience. However, for all I know, it could be horrible compared to other methods! If someone runs the results through an objective metric of scene detection, tell me how this script does compared to other things. This is purely experimental, so use at your own discretion.
