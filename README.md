@@ -16,6 +16,11 @@ There is a great library called PySceneDetect that is commonly used for scene de
 Truthfully, I can't give you an objective answer, but I think it's okay based on my subjective experience. However, for all I know, it could be horrible compared to other methods! If someone runs the results through an objective metric of scene detection, tell me how this script does compared to other things. This is purely experimental, so use at your own discretion.
 
 ### How do I use it?
+First, make a virtualenv and install the dependencies by running the following 3 commands:
+`virtualenv venv`, `source venv/bin/activate`, `python3 -m pip install -r requirements.txt`
+
+Then use with:
+
 `python3 segment_scene.py "path/to/video.mp4"`
 
 or
