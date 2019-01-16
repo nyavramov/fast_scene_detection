@@ -1,4 +1,4 @@
-![](https://i.imgur.com/aIG90Q6.jpg?1)
+![](https://i.imgur.com/JCRgA0k.jpg)
 
 ### Motivation
 HD Video files are generally large files containing a huge amount of information. It would be nice if there was a way to summarize all this information by extracting scenes that occur throughout the video.
