@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 HASH_SIZE = 128 
 STEPSIZE_CONSTANT = 0.00429584
-SCENE_LIMIT = 40
+SCENE_LIMIT = 80
 
 # Once we've found the top N scene changes, use this function to visualize each
 # scene according to its time stamp
