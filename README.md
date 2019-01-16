@@ -18,7 +18,7 @@ Truthfully, I can't give you an objective answer, but I think it's okay based on
 ### Does it have any problems?
 Of course! Within the results, there are times when 2 or more consecutive frames look similar. I suspect this happens because the perceptual hashes of the frames are sufficiently different to appear in the results, but don't necessarily qualify for what a human might call two different scenes.
 
-Also, fade transitions, where two or more frames slowly blend into one another, will give this algorithm a very hard time. Transition effects are problematic because the Hamming distance of perceptual hashes of blended frames will be low, and therefore may not register as a scene change. 
+Also, fade transitions, where two or more frames slowly blend into one another, could give this algorithm a very hard time. Transition effects are problematic because the Hamming distance of perceptual hashes of blended frames will be low, and therefore may not register as a scene change. 
 
 ### How do I use it?
 First, make a virtualenv and install the dependencies by running the following 3 commands:
