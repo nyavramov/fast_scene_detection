@@ -36,8 +36,7 @@ General usage:
 
 ```
 usage: main.py [-h] [--source_path SOURCE_PATH] [--save_path SAVE_PATH]
-               [--library_path LIBRARY_PATH] [--visualize_scenes]
-               
+               [--library_path LIBRARY_PATH] [--visualize_scenes]            
 ```
 
 Available command line options:
