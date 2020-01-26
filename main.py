@@ -31,7 +31,7 @@ def main():
         video_library.open(library_path=cmdline_args.library_path)
     elif cmdline_args.source_path:
         print(f"Extracting scenes from path: {cmdline_args.source_path}")
-        extractor = SceneExtractor(video_source=cmdline_args.source_path, number_scenes=40, step_size_constant=0.008,
+        extractor = SceneExtractor(video_source=cmdline_args.source_path, step_size_constant=0.00429584,
                                    video_library=video_library)
         extractor.process_scenes()
 

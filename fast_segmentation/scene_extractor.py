@@ -10,10 +10,9 @@ from .video_file_handler import VideoFileHandler
 
 class SceneExtractor:
     """Class for handling videos and segmenting them into scenes"""
-    def __init__(self, video_source, number_scenes, step_size_constant=0.00429584, video_library=None):
+    def __init__(self, video_source, step_size_constant=0.00429584, video_library=None):
         self.hash_size = 128
         self.step_size_constant = step_size_constant
-        self.number_scenes = number_scenes
         self.video_library = video_library
 
         self.file_handler = VideoFileHandler(video_source)

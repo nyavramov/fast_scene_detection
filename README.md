@@ -20,8 +20,8 @@ Of course! Within the results, there are times when 2 or more consecutive frames
 
 Also, fade transitions, where two or more frames slowly blend into one another, could give this algorithm a very hard time. Transition effects are problematic because the Hamming distance of perceptual hashes of blended frames will be low, and therefore may not register as a scene change. 
 
-### How do I use it?
-First, make a virtualenv and install the dependencies by running the following 3 commands:
+### How do I install it?
+Make a virtualenv and install the dependencies by running the following 3 commands:
 
 `virtualenv venv`
 
@@ -29,13 +29,27 @@ First, make a virtualenv and install the dependencies by running the following 3
 
 `python3 -m pip install -r requirements.txt`
 
-Then use with:
 
-`python3 segment_scene.py "path/to/video.mp4"`
+### How do I use it?
 
-### How do I turn off the visualization?
-Just make sure the `visualize_scenes` variable is set to False in `__main__`. 
+General usage:
+
+```python3
+usage: main.py [-h] [--source_path SOURCE_PATH] [--save_path SAVE_PATH]
+               [--library_path LIBRARY_PATH] [--visualize_scenes]
+               
+```
+
+Available command line options:
+
+| Argument             | Values                                       | Purpose                                            |
+|----------------------|----------------------------------------------|----------------------------------------------------|
+| `--source_path`      | "path/to/video.mp4", "path/to/video_folder"  | A video source file or directory containing videos |        
+| `--save_path`        | "path/to/save/to"                            | A path to save a pickled segmented video object    |
+| `--library_path`     | "path/to/pickled/video_collection"           | A path to a saved segmented video pickle object    |
+| `--visualize_scenes` | None                                         | Whether or not to visualize scenes                 |
+
 
 ### Sample Visualization 
-![](https://i.imgur.com/JCRgA0k.jpg)
+![](https://i.imgur.com/R1ZNw1p.jpg)
 

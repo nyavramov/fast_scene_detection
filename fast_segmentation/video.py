@@ -60,11 +60,13 @@ class Video:
                 just_incremented_rows = False
 
         fig = plt.figure()
+        fig.canvas.manager.full_screen_toggle()
 
         # Display each scene as a subplot in matplotlib
         for counter, scene in enumerate(self.sorted_scenes):
 
             y = fig.add_subplot(number_of_rows, number_of_columns, counter + 1)
+
             plt.subplots_adjust(left=0, bottom=0, right=1.0, top=0.99, wspace=0.0, hspace=0.07)
             y.imshow(cv2.cvtColor(scene.frame, cv2.COLOR_BGR2RGB))
 
