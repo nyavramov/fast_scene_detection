@@ -34,7 +34,7 @@ Make a virtualenv and install the dependencies by running the following 3 comman
 
 General usage:
 
-```python3
+```
 usage: main.py [-h] [--source_path SOURCE_PATH] [--save_path SAVE_PATH]
                [--library_path LIBRARY_PATH] [--visualize_scenes]
                
