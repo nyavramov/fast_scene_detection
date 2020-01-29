@@ -1,19 +1,28 @@
 import argparse
 
-from fast_segmentation.scene_extractor import SceneExtractor
-from fast_segmentation.video_library import VideoLibrary
+from fast_scene_detection.scene_extractor import SceneExtractor
+from fast_scene_detection.video_library import VideoLibrary
 
 
 def arg_parser():
     """Parses user's command line input"""
     parser = argparse.ArgumentParser()
-    parser.add_argument('--source_path', action='store', help='A video source file or directory containing videos',
+    parser.add_argument('--source_path',
+                        action='store',
+                        help='A video source file or directory containing videos',
                         dest='source_path')
-    parser.add_argument('--save_path', action='store', help='A path to which you would like to save the segmented '
-                                                            'videos', dest='save_path')
-    parser.add_argument('--library_path', action='store', help='A path to a pickled video video library object',
+    parser.add_argument('--save_path',
+                        action='store',
+                        help='A path to which you would like to save the segmented '
+                        'videos',
+                        dest='save_path')
+    parser.add_argument('--library_path',
+                        action='store',
+                        help='A path to a pickled video video library object',
                         dest='library_path')
-    parser.add_argument('--visualize_scenes', action='store_true', help='Whether to visualize scenes or not',
+    parser.add_argument('--visualize_scenes',
+                        action='store_true',
+                        help='Whether to visualize scenes or not',
                         dest='visualize_scenes')
     cmdline_args = parser.parse_args()
 
@@ -31,7 +40,8 @@ def main():
         video_library.open(library_path=cmdline_args.library_path)
     elif cmdline_args.source_path:
         print(f"Extracting scenes from path: {cmdline_args.source_path}")
-        extractor = SceneExtractor(video_source=cmdline_args.source_path, step_size_constant=0.00429584,
+        extractor = SceneExtractor(video_source=cmdline_args.source_path,
+                                   step_size_constant=0.00429584,
                                    video_library=video_library)
         extractor.process_scenes()
 

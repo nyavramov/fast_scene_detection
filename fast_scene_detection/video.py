@@ -40,8 +40,8 @@ class Video:
             --> number_of_columns = 2 * (sqrt(number_of_scenes / 2))
         '''
         number_of_scenes = len(self.sorted_scenes)
-        number_of_columns = int(2 * ((number_of_scenes / 2) ** 0.5))
-        number_of_rows = int((number_of_scenes / 2) ** 0.5)
+        number_of_columns = int(2 * ((number_of_scenes / 2)**0.5))
+        number_of_rows = int((number_of_scenes / 2)**0.5)
 
         just_incremented_rows = False
 
