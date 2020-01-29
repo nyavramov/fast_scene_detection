@@ -43,7 +43,7 @@ FAQs
 1. #### What is this?
 
     It's a small package that attempts to divide a video into scenes based on its content. You give it a video and it
-gives you a list of timestamps where each scene strats. It also lets you visualize and save extracted scenes.
+gives you a list of timestamps where each scene starts. It also lets you visualize and save extracted scenes.
 
 2. #### How does it work?
 
