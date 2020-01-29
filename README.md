@@ -10,7 +10,7 @@ Installation
 
 Make a virtualenv and install the dependencies by running the following 3 commands:
 
-```python3
+```
 virtualenv venv
 source venv/bin/activate
 python3 -m pip install -r requirements.txt
