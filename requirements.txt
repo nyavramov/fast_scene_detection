@@ -4,7 +4,7 @@ kiwisolver==1.0.1
 matplotlib==3.0.2
 numpy==1.16.0
 opencv-python==4.0.0.21
-Pillow==6.2.0
+Pillow==9.3.0
 pyparsing==2.3.1
 python-dateutil==2.7.5
 PyWavelets==1.0.1
